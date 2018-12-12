@@ -24,9 +24,9 @@ public class CDK1242ExampleStack extends Stack {
         // --- resource created at ---
         // at new Subscription (/private/var/folders/0y/l3zzxxh96w51j_hmrc852_y83tcgzz/T/jsii-kernel-NvyY5e/node_modules/@aws-cdk/aws-sns/lib/subscription.js:14:9)
         // at Topic.subscribeQueue (/private/var/folders/0y/l3zzxxh96w51j_hmrc852_y83tcgzz/T/jsii-kernel-NvyY5e/node_modules/@aws-cdk/aws-sns/lib/topic-ref.js:66:21)
-        subscription.getPropertyOverrides().setRawMessageDelivery(false);
+        // subscription.getPropertyOverrides().setRawMessageDelivery(false);
 
         // This works.
-        // subscription.addOverride("Properties.RawMessageDelivery", true);
+        subscription.addOverride("Properties.RawMessageDelivery", true);
     }
 }
